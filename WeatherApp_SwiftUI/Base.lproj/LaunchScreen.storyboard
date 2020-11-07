@@ -1,19 +1,50 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lobster-Regular.ttf">
+            <string>Lobster-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="akf-gq-wR7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-stormy-weather-96" translatesAutoresizingMaskIntoConstraints="NO" id="lBd-IT-2rU">
+                                <rect key="frame" x="165.5" y="408" width="83" height="90"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weathy App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4w-Wf-z2a">
+                                <rect key="frame" x="108.5" y="338" width="197" height="50"/>
+                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="40"/>
+                                <color key="textColor" red="0.72588199379999996" green="0.84813779590000005" blue="0.97419959310000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="lBd-IT-2rU" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.1" id="4Ke-gT-8qM"/>
+                            <constraint firstItem="akf-gq-wR7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4vm-ML-fmi"/>
+                            <constraint firstItem="lBd-IT-2rU" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.2" id="EwF-dS-ua0"/>
+                            <constraint firstAttribute="bottom" secondItem="akf-gq-wR7" secondAttribute="bottom" id="JTy-Un-XAc"/>
+                            <constraint firstItem="lBd-IT-2rU" firstAttribute="top" secondItem="t4w-Wf-z2a" secondAttribute="bottom" constant="20" id="eco-dr-RgI"/>
+                            <constraint firstItem="lBd-IT-2rU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="euX-6N-FiO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="akf-gq-wR7" secondAttribute="trailing" id="ikk-48-Tpk"/>
+                            <constraint firstItem="t4w-Wf-z2a" firstAttribute="centerX" secondItem="lBd-IT-2rU" secondAttribute="centerX" id="tlK-xV-AV6"/>
+                            <constraint firstItem="akf-gq-wR7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ukX-vF-t1g"/>
+                            <constraint firstItem="lBd-IT-2rU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zu5-eY-fUR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +53,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="4000" height="6000"/>
+        <image name="icons8-stormy-weather-96" width="96" height="96"/>
+    </resources>
 </document>
