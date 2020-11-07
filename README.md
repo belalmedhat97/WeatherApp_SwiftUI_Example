@@ -1,6 +1,5 @@
 # WeatherApp_SwiftUI
-simple one screen Weather App using swiftui 
-In this example it show how to use SwiftUI With Simple API call using URL Session
+Simple one screen Weather App using swiftui 
 ## API
 I used online API that retreive weather Details of city or country every time i call it : http://www.weatherapi.com/ then by using codable decode JSON response and show Weather data
  
